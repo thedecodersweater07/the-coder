@@ -1,1 +1,4 @@
-# the-coder
+- looking for a partner at games website and other things
+- i like building stores but lookingg to work in to game dev i can only do unreal engine and i can script but not good
+- who is in it
+- do you for free dm me on discord: joferie - that is my discord 
