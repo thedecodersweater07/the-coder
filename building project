@@ -1,0 +1,23 @@
+building project
+--------------------------------
+cmake_minimum_required(VERSION 3.10)
+project(SimpleBrowser)
+
+set(CMAKE_CXX_STANDARD 17)
+
+find_package(Qt5 REQUIRED COMPONENTS Widgets)
+find_package(CEF REQUIRED)
+
+include_directories(${Qt5_INCLUDE_DIRS} ${CEF_INCLUDE_DIRS})
+link_directories(${CEF_LIBRARY_DIRS})
+
+add_executable(SimpleBrowser
+    main.cpp
+    browser_app.cpp
+    main_window.cpp
+)
+
+target_link_libraries(SimpleBrowser
+    Qt5::Widgets
+    ${CEF_LIBRARIES}
+)
